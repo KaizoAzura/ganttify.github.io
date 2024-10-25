@@ -1,0 +1,40 @@
+// import
+
+@import "variable";
+
+.btn {
+  font-size: $font-size-base;
+
+  // btn primary
+  &.btn-primary {
+    background-color: $color-bg-dark;
+    color: $text-color-white;
+    font-size: inherit;
+    border: 1px solid;
+
+    &:focus {
+      background-color: $color-bg-medium;
+    }
+  }
+
+  //   btn secondary
+  &.btn-secondary {
+    background-color: $color-bg-light;
+    color: $text-color-black;
+    border: 1px solid $border-color-light;
+
+    &:focus {
+      background-color: $color-bg-medium;
+    }
+  }
+
+  &.btn-tertiary {
+    background-color: $color-bg-medium;
+    color: $text-color-white;
+    border: 1px solid $color-bg-medium;
+
+    &:focus {
+      background-color: $color-bg-medium;
+    }
+  }
+}

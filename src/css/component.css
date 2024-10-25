@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.heading {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #cccccc;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 16px;
+}
+.btn.btn-primary {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: inherit;
+  border: 1px solid;
+}
+.btn.btn-primary:focus {
+  background-color: #333333;
+}
+.btn.btn-secondary {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #cccccc;
+}
+.btn.btn-secondary:focus {
+  background-color: #333333;
+}
+.btn.btn-tertiary {
+  background-color: #333333;
+  color: #ffffff;
+  border: 1px solid #333333;
+}
+.btn.btn-tertiary:focus {
+  background-color: #333333;
+}/*# sourceMappingURL=component.css.map */

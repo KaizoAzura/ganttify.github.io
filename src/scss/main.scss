@@ -1,0 +1,185 @@
+// import
+
+@import "variable";
+@import "component";
+
+// style
+
+.navbar {
+  background-color: $color-bg-light;
+  color: $text-color-black;
+  font-size: $font-size-base;
+
+  // navbar toggler
+  .navbar-toggler {
+    color: $text-color-black;
+    font-size: $font-size-xxl;
+    border: 0;
+
+    &:focus {
+      border: 0;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  // offcanvas
+  .offcanvas {
+    background-color: $color-bg-light;
+    color: $text-color-black;
+
+    // Navbar nav styles
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          font-size: 10vw;
+          color: $text-color-dark-gray;
+          position: relative;
+          text-decoration: none;
+
+          // Hover effect with underline transition
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            height: 2px;
+            background-color: $text-color-dark-gray;
+            transition: width 0.3s ease, left 0.3s ease;
+          }
+
+          &:hover::after {
+            width: 100%;
+            left: 0;
+          }
+
+          &:hover {
+            color: $text-color-black;
+          }
+        }
+
+        // Button link inside nav-item
+        .btn {
+          width: 100%;
+          font-size: $font-size-xl;
+          padding: 0.75rem 1rem;
+        }
+      }
+    }
+  }
+
+  // Responsive styles for medium screens and above
+  @media (min-width: $breakpoint-sm) {
+    .offcanvas {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-size: 7.5vw;
+          }
+        }
+      }
+    }
+  }
+
+  // Responsive styles for medium screens and above
+  @media (min-width: $breakpoint-md) {
+    .offcanvas {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-size: 5vw;
+          }
+        }
+      }
+    }
+  }
+
+  // Responsive styles for large screens and above
+  @media (min-width: $breakpoint-lg) {
+    .offcanvas {
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            font-size: $font-size-sm;
+            padding-bottom: 0.25rem;
+            margin: 0 0.25rem;
+            &::after {
+              left: 50%;
+            }
+          }
+
+          .btn {
+            font-size: $font-size-sm;
+            padding: 0.4rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// hero section
+
+.hero {
+  background: radial-gradient(
+    circle at top,
+    rgba(20, 20, 20, 0.4),
+    $color-bg-dark,
+    $color-bg-dark
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: $text-color-white;
+  position: relative;
+
+  .float-icon {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transition: transform 2s ease;
+    z-index: 90;
+    filter: grayscale(100);
+    background-color: $color-bg-medium;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    opacity: 0.75;
+  }
+
+  .container {
+    z-index: 100;
+    .hero-img {
+      width: 100%;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px 5px rgba(76, 76, 76, 0.5);
+      transition: 0.3s ease-in-out;
+      height: 300px;
+      object-fit: cover;
+      object-position: left;
+
+      @media (min-width: $breakpoint-lg) {
+        width: 75%;
+        height: auto;
+      }
+    }
+  }
+}
+
+// trust section
+
+.trust {
+  background-color: $color-bg-light;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  .img-sponsor {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    filter: grayscale(100);
+  }
+}

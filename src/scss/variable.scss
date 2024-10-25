@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Variabel Font Size
+$font-size-base: 16px; // Font Default
+$font-size-sm: 0.875rem; // 14px
+$font-size-md: 1rem; // 16px
+$font-size-lg: 1.125rem; // 18px
+$font-size-xl: 1.25rem; // 20px
+$font-size-xxl: 1.5rem; // 24px
+
+// ---------------------------
+
+// Background color variables for a black and white color scheme
+$color-bg-dark: #000000; // Pure black background
+$color-bg-medium: #333333; // Dark gray background for depth
+$color-bg-light-medium: #cccccc; // Light gray background for contrast
+$color-bg-light: #ffffff; // Pure white background
+
+// ---------------------------
+
+// Text color variables for a black and white color scheme
+$text-color-black: #000000; // Pure black for primary text
+$text-color-white: #ffffff; // Pure white for background and text
+$text-color-dark-gray: #333333; // Dark gray for secondary text (softens contrast)
+$text-color-light-gray: #cccccc; // Light gray for muted text or placeholders
+$text-color-muted: #777777; // Muted gray for less emphasized text
+$text-color-accent: #ff5722; // Accent color (orange) for links or buttons
+
+// ---------------------------
+// Border color variables for a black and white color scheme
+$border-color-dark: #000000; // Black border for high contrast
+$border-color-medium: #333333; // Dark gray border for subtlety
+$border-color-light: #cccccc; // Light gray border for softer edges
+$border-color-white: #ffffff; // White border for contrast on dark backgrounds
+
+// ---------------------------
+// Responsive breakpoints using min-width
+$breakpoint-xs: 480px; // Extra small (phones)
+$breakpoint-sm: 576px; // Small (phones)
+$breakpoint-md: 768px; // Medium (tablets)
+$breakpoint-lg: 992px; // Large (desktops)
+$breakpoint-xl: 1200px; // Extra large (large desktops)
+$breakpoint-xxl: 1440px; // Extra extra large (widescreens)
+
+// class reset style
+.heading {
+  font-size: 3rem;
+  font-weight: 500;
+  @media (min-width: $breakpoint-md) {
+    font-size: calc(3rem * 1.2);
+  }
+}
+
+.subheading {
+  font-size: $font-size-lg;
+  color: $text-color-dark-gray;
+  font-weight: 500;
+}
+
+.description {
+  font-size: $font-size-md;
+  font-weight: 300;
+  color: $text-color-light-gray;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .btn {
+    margin: 0 1rem;
+  }
+}
+
+// responsive
+@media (min-width: $breakpoint-xl) {
+  .heading,
+  .description {
+    width: 75%;
+    margin: 1rem auto;
+  }
+}
+
+@media (min-width: $breakpoint-xxl) {
+  .heading {
+    font-size: calc(3rem * 1.75);
+  }
+
+  .description {
+    font-size: calc(16px * 1.5);
+  }
+
+  .btn-container {
+    .btn {
+      font-size: calc(1rem * 1.25);
+      padding: 0.5rem 1.25rem;
+    }
+  }
+}
+
+// style
+
+body {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: $color-bg-dark;
+  font-size: $font-size-base;
+}
