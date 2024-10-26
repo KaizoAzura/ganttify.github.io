@@ -42,6 +42,14 @@ $breakpoint-lg: 992px; // Large (desktops)
 $breakpoint-xl: 1200px; // Extra large (large desktops)
 $breakpoint-xxl: 1440px; // Extra extra large (widescreens)
 
+// gradient color
+$gradient-primary: linear-gradient(
+  0deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(191, 181, 218, 0.25) 86%,
+  rgba(148, 187, 233, 0.25) 100%
+);
+
 // class reset style
 .heading {
   font-size: 3rem;

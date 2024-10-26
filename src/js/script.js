@@ -49,8 +49,8 @@ $(document).ready(function () {
           infinite: true,
           speed: 300,
           autoplay: true,
-          autoplaySpeed: 2000,
-          slidesToShow: $(window).width() < 768 ? 1 : 2,
+          autoplaySpeed: 500,
+          slidesToShow: $(window).width() < 768 ? 3 : 4,
           slidesToScroll: 1,
           arrows: false,
         });
@@ -62,9 +62,9 @@ $(document).ready(function () {
     }
   }
 
-  initializeSlider(); // Panggil fungsi saat halaman dimuat
+  initializeSlider();
 
   $(window).resize(function () {
-    initializeSlider(); // Panggil fungsi saat ukuran jendela diubah
+    initializeSlider();
   });
 });

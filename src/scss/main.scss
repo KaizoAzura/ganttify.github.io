@@ -171,15 +171,55 @@
 
 .trust {
   background-color: $color-bg-light;
-  min-height: 50vh;
+  min-height: 25vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   .img-sponsor {
-    width: 100%;
+    width: 50%;
     height: auto;
     box-sizing: border-box;
-    filter: grayscale(100);
+  }
+}
+
+.features {
+  padding: 3rem 0.5rem;
+  min-height: 100vh;
+  background-color: $color-bg-light;
+
+  .heading,
+  .description {
+    width: 100%;
+  }
+
+  .subheading {
+    border: 1px solid $border-color-light;
+    padding: 0.5rem 1rem;
+    width: max-content;
+    border-radius: 0.5rem;
+  }
+
+  .description {
+    color: $text-color-dark-gray;
+  }
+
+  // features row
+
+  .features-row {
+    min-height: 50vh;
+    .features-card {
+      .card {
+        border: 0;
+        background: $gradient-primary;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        height: 100%;
+
+        img {
+          border-radius: 0.5rem;
+        }
+      }
+    }
   }
 }

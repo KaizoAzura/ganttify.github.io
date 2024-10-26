@@ -147,6 +147,15 @@ body {
   background-color: #333333;
 }
 
+.card .card-body .card-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.card .card-body .card-text {
+  font-size: 0.875rem;
+}
+
 .navbar {
   background-color: #ffffff;
   color: #000000;
@@ -263,14 +272,46 @@ body {
 
 .trust {
   background-color: #ffffff;
-  min-height: 50vh;
+  min-height: 25vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .trust .img-sponsor {
-  width: 100%;
+  width: 50%;
   height: auto;
   box-sizing: border-box;
-  filter: grayscale(100);
+}
+
+.features {
+  padding: 3rem 0.5rem;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+.features .heading,
+.features .description {
+  width: 100%;
+}
+.features .subheading {
+  border: 1px solid #cccccc;
+  padding: 0.5rem 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0.5rem;
+}
+.features .description {
+  color: #333333;
+}
+.features .features-row {
+  min-height: 50vh;
+}
+.features .features-row .features-card .card {
+  border: 0;
+  background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(191, 181, 218, 0.25) 86%, rgba(148, 187, 233, 0.25) 100%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 100%;
+}
+.features .features-row .features-card .card img {
+  border-radius: 0.5rem;
 }/*# sourceMappingURL=main.css.map */
