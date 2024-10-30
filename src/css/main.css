@@ -150,7 +150,7 @@ body {
 .card .card-body .card-title {
   font-size: 1.125rem;
   font-weight: 500;
-  margin: 1rem 0;
+  margin: 0.5rem 0 1rem;
 }
 .card .card-body .card-text {
   font-size: 0.875rem;
@@ -314,4 +314,29 @@ body {
 }
 .features .features-row .features-card .card img {
   border-radius: 0.5rem;
+}
+
+.benefits {
+  padding: 3rem 0.5rem;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+.benefits .heading,
+.benefits .description {
+  width: 100%;
+}
+.benefits .subheading {
+  border: 1px solid #cccccc;
+  padding: 0.5rem 1rem;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 0.5rem;
+}
+.benefits .description {
+  color: #333333;
+}
+.benefits .benefits-card img {
+  background-color: blue;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
 }/*# sourceMappingURL=main.css.map */

@@ -183,6 +183,8 @@
   }
 }
 
+// features section
+
 .features {
   padding: 3rem 0.5rem;
   min-height: 100vh;
@@ -220,6 +222,36 @@
           border-radius: 0.5rem;
         }
       }
+    }
+  }
+}
+
+.benefits {
+  padding: 3rem 0.5rem;
+  min-height: 100vh;
+  background-color: $color-bg-light;
+
+  .heading,
+  .description {
+    width: 100%;
+  }
+
+  .subheading {
+    border: 1px solid $border-color-light;
+    padding: 0.5rem 1rem;
+    width: max-content;
+    border-radius: 0.5rem;
+  }
+  .description {
+    color: $text-color-dark-gray;
+  }
+
+  // benefits card
+  .benefits-card {
+    img {
+      background-color: blue;
+      border-radius: 0.5rem;
+      padding: 0.5rem;
     }
   }
 }
